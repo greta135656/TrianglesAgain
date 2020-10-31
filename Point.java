@@ -24,10 +24,10 @@ public class Point{
 
 
 public double distanceTo(Point other){
-return Math.sqrt((other.y - this.y) * (other.y - this.y) + 
-                  (other.x - this.x) * (other.x - this.x));
+return Math.sqrt((other.getX() - this.getY()) * (other.getY() - this.getY()) + 
+                  (other.getX() - this.getX()) * (other.getY() - this.getX()));
 }
 
 public boolean equals( Point other) {
-return ((other.y == this.y) && (other.x == this.x));
+return (other.getX() == this.getX() && other.getX() == this.getX());
 } }
