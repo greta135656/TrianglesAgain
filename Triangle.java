@@ -1,5 +1,5 @@
 public class Triangle {
- public Point v1, v2, v3;
+ private Point v1, v2, v3;
 
  // 2 constructors 
 public Triangle(Point a, Point b, Point c) 
