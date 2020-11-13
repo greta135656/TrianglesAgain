@@ -52,7 +52,7 @@ public String classify()
               distance ( v2.getX(),v2.getY() ,v3.getX(),v3.getY()) ==
               distance ( v3.getX(),v3.getY() ,v1.getX(),v1.getY()) ||
               distance ( v3.getX(),v3.getY() ,v1.getX(),v1.getY()) ==
-              distance ( v1.getX(),v1.getY(), v2.getX(),v2.getY())
+              distance ( v1.getX(),v1.getY(), v2.getX(),v2.getY()))
               return "isosceles";
               else return "scalene";}
 
