@@ -28,9 +28,9 @@ public static double distance(double x1, double y1,
 
 
 public double getPerimeter() {
-return (distance (v1.x,v1.y,v2.x,v2.y) +
-        distance (v2.x,v2.y,v3.x,v3.y) +
-        distance (v3.x,v3.y,v1.x,v1.y));
+return (distance (v1.getX(),v1.getY(), v2.getX(),v2.getY() ) +
+        distance (v2.getX(),v2.getY() ,v3.getX(),v3.getY() ) +
+        distance (v3.getX(),v3.getY() ,v1.getX(),v1.getY() ));
   }
 
 
@@ -42,17 +42,17 @@ public double getArea() {
 
               
 public String classify() 
-{          if (distance (v1.x,v1.y,v2.x,v2.y) ==
-              distance ( v2.x,v2.y,v3.x,v3.y) && 
-              distance ( v2.x,v2.y,v3.x,v3.y) ==
-              distance ( v1.x,v1.y,v3.x,v3.y))
+{          if (distance (v1.getX(),v1.getY(), v2.getX(),v2.getY()) ==
+              distance ( v2.getX(),v2.getY() ,v3.getX(),v3.getY()) && 
+              distance ( v2.getX(),v2.getY() ,v3.getX(),v3.getY()) ==
+              distance ( v3.getX(),v3.getY() ,v1.getX(),v1.getY() ))
               return "equilateral";
-          if (distance ( v1.x,v1.y,v2.x,v2.y) ==
-              distance ( v2.x,v2.y,v3.x,v3.y) ||
-              distance ( v2.x,v2.y,v3.x,v3.y) ==
-              distance ( v1.x,v1.y,v3.x,v3.y) ||
-              distance ( v1.x,v1.y,v3.x,v3.y) ==
-              distance ( v1.x,v1.y,v2.x,v2.y))
+          if (distance ( v1.getX(),v1.getY(), v2.getX(),v2.getY()) ==
+              distance ( v2.getX(),v2.getY() ,v3.getX(),v3.getY()) ||
+              distance ( v2.getX(),v2.getY() ,v3.getX(),v3.getY()) ==
+              distance ( v3.getX(),v3.getY() ,v1.getX(),v1.getY()) ||
+              distance ( v3.getX(),v3.getY() ,v1.getX(),v1.getY()) ==
+              distance ( v1.getX(),v1.getY(), v2.getX(),v2.getY())
               return "isosceles";
               else return "scalene";}
 
