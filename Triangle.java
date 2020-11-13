@@ -37,7 +37,7 @@ return (distance (v1.getX(),v1.getY(), v2.getX(),v2.getY() ) +
                                                        
                                                        
 public double getArea() {
-                          return (Math.abs(0.5 * (v1.x * (v2.y - v3.y) + v2.x * (v3.y - v1.y) + v3.x * (v1.y - v2.y) )));
+                          return (Math.abs(0.5 * (v1.getX() * (v2.getY() - v3.getY()) + v2.getX() * (v3.getY() - v1.getY()) + v3.getX() * (v1.getY() - v2.getY()) )));
 }
 
               
